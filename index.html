@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <script src="./js/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="calc-container">
+        <h2>BMI Calculator</h2>
+        <form id="bmi-form">
+          <div class="form-input">
+            <div class="form-control">
+              <label for="height">Height:</label>
+              <input
+                type="text"
+                name="height"
+                id="height"
+                placeholder="Example 1,75"
+              />
+            </div>
+            <div class="form-control">
+              <label for="weight">Weight:</label>
+              <input
+                type="text"
+                name="weight"
+                id="weight"
+                placeholder="Example 1,75"
+              />
+            </div>
+          </div>
+          <div class="action-control">
+            <button id="calc-btn">Calculate</button>
+            <button id="clear-btn">Clear</button>
+          </div>
+        </form>
+      </div>
+      <div id="result-container" class="hide">
+        <p id="bmi-number">Your BMI: <span></span></p>
+        <p id="bmi-info">Your current condition: <span></span></p>
+        <h3>Check the classifications:</h3>
+        <div id="bmi-table">
+          <div class="table-header">
+            <h4>BMI</h4>
+            <h4>Classification</h4>
+            <h4>Obesity</h4>
+          </div>
+          <div class="table-data"></div>
+        </div>
+        <button id="return-btn">Go back</button>
+      </div>
+    </div>
+  </body>
+</html>
